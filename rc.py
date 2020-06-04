@@ -15,7 +15,7 @@ def model(y,t):
     x=1
     return (-y+k*x)/tau
 
-t=linspace(0,14,100)
+t=np.linspace(0,14,100)
 y=odeint(model,0,t)
 
 plt.figure(1)
