@@ -19,8 +19,9 @@ t=np.linspace(0,14,100)
 y=odeint(model,0,t)
 
 plt.figure(1)
-plt.plot(t,y,r-)
+plt.plot(t,y,'r-', linewidth=2.0, label='k=1.0')
 plt.xlabel('Time')
 plt.ylabel('Response(y)')
 
+plt.legend()
 plt.show()
